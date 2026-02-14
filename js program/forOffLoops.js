@@ -15,3 +15,16 @@ const greetings = "Hello World";
 for (const greet of greetings) {
   console.log(`Each char is ${greet}`);
 }
+
+const fahrenheit = [0, 32, 45, 50, 75, 80, 99, 120];
+const celsius = [];
+
+for (let i = 0; i < fahrenheit.length; i++) {
+  const f = fahrenheit[i];
+  const c = ((f - 32) * 5 / 9).toFixed(1)
+  celsius.push(c)
+}
+
+console.log(celsius);
+
+fahrenheit.filter()
